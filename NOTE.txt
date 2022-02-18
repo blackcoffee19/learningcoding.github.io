@@ -1,0 +1,23 @@
+#HOW TO RUN JAVA CODE IN TERMINAL?
+TO check/ compile .java file use:
+$ javac nameFile.java
+THEN the successfull compilation .java => produces a .class file
+THEN run code:
+$ java nameFile
+
+#THE PROGRAM
+#Case-Sensitivity 
+		--Java is a case-sensitive language
+#Comments 
+		// /**/
+#Classes 
+		-- public class name {class code} 
+		-# class name === name.java
+#Methods
+		-- public static void main(String[] args) {}
+		-- public 
+
+#Statements
+		-- System.out.println();
+
+#Object : an instance of a class, create by a constructor method
