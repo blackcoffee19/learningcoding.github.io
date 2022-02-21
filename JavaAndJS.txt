@@ -1,0 +1,39 @@
+	JavaScipt					Java
+#VARIABLES
+	var					String / char #''
+	let					int / double / boolean 
+	const				final	
+
+#SYNTAX
+
+Class name {				public class Name {
+						private String name;
+						private int age;						
+	constructor(arg1, arg2) {		public Name(String arg1,	
+	this._arg1 = arg1;					int arg2){	
+	this._arg2 = arg2;			name = arg1;
+	this._somethingElse = true;		age = arg2;
+	}					}
+#ACCESSOR METHOD - GETTER
+	get arg1(){				public String getName() {  
+		return this._arg1;}			return name;}
+	get arg2(){				public int getAge() {
+		return this._arg2;}			return age;}
+	
+#MUTATOR METHOD - SETTERS
+	set arg1(name){				public void setName(String new){
+		this._arg1 = name;}			name = new;}
+	set arg2(num){				public void setAge(int newAge){
+		this._arg2 = num;}			age = newAge;}
+
+
+
+						public static void main(
+								String[] args) {
+
+
+
+
+
+						}	
+}					}	

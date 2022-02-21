@@ -15,7 +15,9 @@ public class Test {
       } else {
         System.out.println("What");
       }
-    }
+    };
+    JavaBeginer bal = new JavaBeginer("Tuong",21 ,23042.23);
+    bal.setBalance(32.42);
   }
 
 }  
