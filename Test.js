@@ -19,5 +19,8 @@ class Test {
 const examp1 = new Test(32, "test");
 examp1.fun();
 console.log(examp1.par1);
-examp1.setpar1("aaaaa");
-examp1.fun();
+//examp1.setpar1("aaaaa");
+//examp1.fun();
+let x = process.argv[2];
+let y = process.argv[3];
+console.log("x * y = " + x*y);
