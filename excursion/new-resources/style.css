@@ -1,0 +1,20 @@
+:root{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+html{
+    color: #ffffff;
+}
+a {
+    color: rgb(39, 226, 179);
+}
+p {
+    color: #7c7c7c;
+}
+body{
+    display: block;
+}
+main{
+    display: block;
+}
