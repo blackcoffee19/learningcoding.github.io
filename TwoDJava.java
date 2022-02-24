@@ -8,7 +8,7 @@ class TwoDJava {
         declareArr = new String[][] {{"one", "two"}, {"three", "four"}, {"five", "six"}};
 
         //Initialization 2D Array with emty valua
-        String[][] emty = new String[2][5];
+        int[][] emty = new int[2][5];
         /**[0,0,0,0,0]
          * [0,0,0,0,0]
          */
@@ -21,6 +21,18 @@ class TwoDJava {
         //Accessing Elements 
         int six = initializerList[1][0]; //6
 
+        //Assign and Modifying Elements
+        emty[0][0] = initializerList[0][0]*2;
+        emty[0][1] = initializerList[0][1]*2;
+        emty[0][2] = initializerList[0][0]*2;
+        emty[0][3] = 0;
+        emty[0][4] = initializerList[0][1]*2;
+        emty[1][0] = initializerList[1][0]*2;
+        emty[1][1] = initializerList[1][1]*2;
+        emty[1][2] = initializerList[1][0]*2;
+        emty[1][3] = 0;
+        emty[1][4] = initializerList[1][1]*2;
+        
         //Print a 2D array use:
         System.out.println(Arrays.deepToString(initializerList));
         System.out.println(Arrays.deepToString(declareArr));
