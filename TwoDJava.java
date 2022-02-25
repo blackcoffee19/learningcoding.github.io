@@ -20,7 +20,7 @@ class TwoDJava {
 
         //Accessing Elements 
         int six = initializerList[1][0]; //6
-
+        System.out.println(six);
         //Assign and Modifying Elements
         emty[0][0] = initializerList[0][0]*2;
         emty[0][1] = initializerList[0][1]*2;
@@ -37,5 +37,44 @@ class TwoDJava {
         System.out.println(Arrays.deepToString(initializerList));
         System.out.println(Arrays.deepToString(declareArr));
         System.out.println(Arrays.deepToString(emty));
+
+        //For Loop
+        for (int i = 0; i < initializerList.length; i++){
+            for (int j = 0; j < initializerList[i].length; j++){
+                System.out.print(initializerList[i][j]+" ");
+
+            }
+            System.out.println();
+        }
+        //While loop
+        int a = 0, b = 0, c = 0;
+        while(a < declareArr.length){
+            b = 0;
+            while(b < declareArr[a].length){
+                System.out.print(declareArr[a][b]+" ");
+                c += declareArr[a][b].length();
+                b++;
+            }
+            System.out.println();
+            a++;
+        }
+        System.out.println(c);
+        
+
+		int[][] imageData = {{100,90,255,80,70,255,60,50},
+							{255,10,5,255,10,5,255,255},
+	    			        {255,255,255,0,255,255,255,75},
+		    		        {255,60,30,0,30,60,255,255}};
+		
+		//First, we want to crop the image down to a 4x6 image, removing the right 2 columns. Declare and initialize a new 2D array of integers with 4 rows and 6 columns called `newImage`.
+		int[][] newImage = new int[4][6];
+		for (int i = 0; i < imageData.length; i++){
+            for (int j = 0; j < (imageData[i].length-2); j++){
+                newImage[i][j] = imageData[i][j];
+                System.out.print(newImage[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
     }
 }
